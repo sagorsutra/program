@@ -20,22 +20,25 @@ public class insrt_1st {
 
 
 
-
-
-
-
-
     }
 }
 
 
 
 
+/*
+
+        swapping two number
+        Collections.swap(c1,0,2);
+
+
+ */
+
+
+
     //Comparing two list
 
     /*
-
-
 
       //shortcut
       for (String e : c1)

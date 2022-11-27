@@ -14,6 +14,28 @@ public class insrt_1st {
         arrayList.add("Purple");
 
 
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+        /*
+         ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Red");
+        arrayList.add("Black");
+        arrayList.add("yellow");
+        arrayList.add("Green");
+        arrayList.add("Purple");
+
+
         if (arrayList.contains("Green"))
         {
             System.out.println("Yes");
@@ -23,13 +45,10 @@ public class insrt_1st {
         else
             System.out.println("No");
 
+         */
 
 
 
-
-
-    }
-}
 
 
 

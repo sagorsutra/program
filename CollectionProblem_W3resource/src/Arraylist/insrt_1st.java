@@ -1,5 +1,7 @@
 package Arraylist;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,22 +9,58 @@ import java.util.List;
 public class insrt_1st {
     public static void main(String[] args) {
 
+        ArrayList<String> c1= new ArrayList<String>();
+        c1.add("Red");
+        c1.add("Green");
+        c1.add("Black");
+        c1.add("White");
+        c1.add("Pink");
 
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Red");
-        arrayList.add("Black");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
 
-        System.out.println(arrayList);
 
-        List<String> sub_list = arrayList.subList(0,3);
 
-        System.out.println(sub_list);
+
+
+
+
+
 
     }
 }
+
+
+
+
+    //Comparing two list
+
+    /*
+
+
+
+      //shortcut
+      for (String e : c1)
+       {
+           c3.add(c2.contains(e) ? "Yes" : "No");
+       }
+        System.out.println(c3);
+
+
+
+     ArrayList<String> c3 = new ArrayList<>();
+
+       for (String e : c1)
+       {
+          if (c2.contains(e))
+          {
+              c3.add("Yes");
+          }
+          else
+              c3.add("NO");
+       }
+        System.out.println(c3);
+
+     */
+
 
 
 /*

@@ -7,16 +7,12 @@ public class printList {
     public static void main(String[] args) {
         ArrayList<String> arrayList = new ArrayList<String>();
 
-        arrayList.add("Red");
-        arrayList.add("Green");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
+        int a =10;
+        int b =40;
 
-        for (String s : arrayList)
-        {
-            System.out.println(s);
-        }
+        System.out.println((a+b == 50)? "yes" : "NO");
+
+
 
     }
 

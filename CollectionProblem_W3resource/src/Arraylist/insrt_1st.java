@@ -14,6 +14,15 @@ public class insrt_1st {
         arrayList.add("Purple");
 
 
+        ArrayList<String> secArray = new ArrayList<String>(arrayList);
+
+        System.out.println(secArray+"\n");
+
+        secArray.add("Brown");
+
+        System.out.println(secArray);
+
+
 
 
 
@@ -22,19 +31,26 @@ public class insrt_1st {
 }
 
 
-
-
-
-
+        //coping a list  into another list
 
         /*
-         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Red");
-        arrayList.add("Black");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
+            ArrayList<String> secArray = new ArrayList<String>(arrayList);
 
+        System.out.println(secArray+"\n");
+
+        secArray.add("Brown");
+
+        System.out.println(secArray);
+
+         */
+
+
+
+
+
+        //Checking the word in the list and getting the index number
+
+        /*
 
         if (arrayList.contains("Green"))
         {
@@ -52,14 +68,9 @@ public class insrt_1st {
 
 
 
+        //adding into the index number
 
         /*
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Red");
-        arrayList.add("Green");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
 
         System.out.println("before adding\n");
         System.out.println(arrayList);
@@ -73,14 +84,6 @@ public class insrt_1st {
 
 //updating the index element
         /*
-
-         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Red");
-        arrayList.add("Green");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
-
          arrayList.set(2,"Black");
 
         System.out.println(arrayList);
@@ -90,12 +93,7 @@ public class insrt_1st {
 
 //Get element from an index
         /*
-         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Red");
-        arrayList.add("Green");
-        arrayList.add("yellow");
-        arrayList.add("Green");
-        arrayList.add("Purple");
+
 
         System.out.println(arrayList.get(2));
 

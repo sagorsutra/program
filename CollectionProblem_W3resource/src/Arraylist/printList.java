@@ -13,7 +13,6 @@ public class printList {
         arrayList.add("Green");
         arrayList.add("Purple");
 
-
         for (String s : arrayList)
         {
             System.out.println(s);

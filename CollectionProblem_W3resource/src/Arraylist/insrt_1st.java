@@ -1,6 +1,8 @@
 package Arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class insrt_1st {
     public static void main(String[] args) {
@@ -13,7 +15,29 @@ public class insrt_1st {
         arrayList.add("Green");
         arrayList.add("Purple");
 
+        System.out.println(arrayList);
 
+        List<String> sub_list = arrayList.subList(0,3);
+
+        System.out.println(sub_list);
+
+    }
+}
+
+
+/*
+
+        sublist --> make portion of a list
+
+        List<String> sub_list = arrayList.subList(0,3);
+
+        System.out.println(sub_list);
+
+ */
+
+
+/*
+        reverse a list
         ArrayList<String> secArray = new ArrayList<String>(arrayList);
 
         System.out.println(secArray+"\n");
@@ -23,12 +47,7 @@ public class insrt_1st {
         System.out.println(secArray);
 
 
-
-
-
-
-    }
-}
+ */
 
 
         //coping a list  into another list

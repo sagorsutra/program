@@ -1,5 +1,6 @@
 package HashSet;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Main {
@@ -13,6 +14,19 @@ public class Main {
         set.add("Hocky");
         set.add("Swimming");
 
+        HashSet<String> set1 = new HashSet<String>();
+                set1.add("Football");
+                set1.add("Race");
+                set1.add("Badminton");
+                set1.add("Swimming");
+                set1.add("Hocky");
+                set1.add("Wrestling");
+        HashSet<String> a = new HashSet<>();
+
+        for (String s : set)
+        {
+            System.out.println(set1.contains(s)? "Yes" : "No");
+        }
 
 
 

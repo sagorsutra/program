@@ -1,8 +1,6 @@
 package HashMap;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,15 +12,27 @@ public class Main {
         hashMap.put(4,"Nolan");
         hashMap.put(5,"Halland");
 
-        Set set = hashMap.entrySet();
 
-        System.out.println(set);
+        System.out.println(hashMap.values());
 
 
 
 
      }
 }
+
+
+
+
+
+/*
+ if (hashMap.containsKey(1)){
+            System.out.println("yes!" + hashMap.get(1) );
+        }
+ */
+
+
+
 
 /*
         set view

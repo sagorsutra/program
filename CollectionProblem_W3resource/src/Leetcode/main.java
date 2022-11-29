@@ -6,10 +6,11 @@ class Solution {
     public boolean containsDuplicate(int[] nums) {
 
         HashSet<Integer> hashSet = new HashSet<>();
-        for (int i=0; i< nums.length; i++)
+        for (Integer n: nums)
         {
-            hashSet.add(nums[i]);
+            hashSet.add(n);
         }
+
         if (hashSet.size()!= nums.length)
         {
             return  true;

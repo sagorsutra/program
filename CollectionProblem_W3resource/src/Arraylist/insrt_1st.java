@@ -18,7 +18,7 @@ public class insrt_1st {
 
         for (int i=0; i<c1.size(); i++)
         {
-            System.out.print(c1.get(i) +" "); // This line is iterate for
+            System.out.print(c1.get(i) +" "); // This line is iterate for each value in the list
         }
 
             c1.set(1,"Blue");
@@ -30,8 +30,7 @@ public class insrt_1st {
             }
 
 
-
-
+        System.out.println();
 
           System.out.println(c1);
 

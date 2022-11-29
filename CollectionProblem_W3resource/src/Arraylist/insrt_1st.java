@@ -9,20 +9,51 @@ import java.util.List;
 public class insrt_1st {
     public static void main(String[] args) {
 
-        ArrayList<String> c1= new ArrayList<String>();
-        c1.add("Red");
-        c1.add("Green");
-        c1.add("Black");
-        c1.add("White");
-        c1.add("Pink");
+            ArrayList<String> c1= new ArrayList<String>();
+            c1.add("Red");
+            c1.add("Green");
+            c1.add("Black");
+            c1.add("White");
+            c1.add("Pink");
+
+        for (int i=0; i<c1.size(); i++)
+        {
+            System.out.print(c1.get(i) +" "); // This line is iterate for
+        }
+
+            c1.set(1,"Blue");
+        System.out.println();
+
+            for (int i=0; i<c1.size(); i++)
+            {
+                System.out.print(c1.get(i) + " ");
+            }
 
 
 
+
+
+          System.out.println(c1);
+
+//        Collections.replaceAll(c1,"Red","Blue");
+
+          System.out.println(c1);
 
 
     }
 }
 
+
+
+/*
+        join two more list
+         ArrayList<String> a= new ArrayList<String>();
+        a.addAll(c1);
+        a.addAll(c2);
+
+        System.out.println(a);
+
+ */
 
 
 

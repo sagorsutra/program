@@ -2,6 +2,7 @@ package HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,15 +14,24 @@ public class Main {
         hashMap.put(4,"Nolan");
         hashMap.put(5,"Halland");
 
-       if (hashMap.containsKey(1)){
-            System.out.println("yes!" + hashMap.get(1) );
-        }
+        Set set = hashMap.entrySet();
+
+        System.out.println(set);
 
 
 
 
      }
 }
+
+/*
+        set view
+        Set set = hashMap.entrySet();
+
+        System.out.println(set);
+ */
+
+
 
 /* clone a HashMap
 

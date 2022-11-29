@@ -23,16 +23,48 @@ public class Main {
                 set1.add("Wrestling");
         HashSet<String> a = new HashSet<>();
 
-        for (String s : set)
-        {
-            System.out.println(set1.contains(s)? "Yes" : "No");
-        }
 
 
 
     }
 }
 
+
+
+
+/*
+        Common Element of two set
+
+        for (String s : set)
+        {
+            if (set1.contains(s))
+            {
+                a.add(s);
+            }
+        }
+
+
+        for (String s : a) {
+
+            System.out.println(s);
+
+        }
+
+
+ */
+
+
+
+
+
+/*  Compare Hashset
+
+ for (String s : set)
+        {
+            System.out.println(set1.contains(s)? "Yes" : "No");
+        }
+
+ */
 
 
 /*  Hashset to Array

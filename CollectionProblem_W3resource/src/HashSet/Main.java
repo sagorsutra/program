@@ -1,8 +1,6 @@
 package HashSet;
 
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,17 +13,35 @@ public class Main {
         set.add("Hocky");
         set.add("Swimming");
 
+
+
+
+    }
+}
+
+
+
+/*  Hashset to Array
+
+String[] array = new String[set.size()];
+        set.toArray(array);
+
+        for (String s : array)
+        {
+            System.out.println(s);
+        }
+
+ */
+
+/*      Hashset clone
+
         HashSet<String> n_set = new HashSet<String>();
         int n;
 
         n_set = (HashSet<String>) set.clone();
-
         System.out.println(set);
-
         System.out.println(n_set);
-    }
-}
-
+ */
 
 
 /*      Empty Hashset

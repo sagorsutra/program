@@ -16,7 +16,22 @@ public class insrt_1st {
             c1.add("White");
             c1.add("Pink");
 
-        for (int i=0; i<c1.size(); i++)
+            for (int i=0; i<c1.size(); i++)
+            {
+                System.out.println("Index" + " "+i + " : " +c1.get(i));
+            }
+
+
+
+
+
+    }
+}
+
+
+
+/*
+  for (int i=0; i<c1.size(); i++)
         {
             System.out.print(c1.get(i) +" "); // This line is iterate for each value in the list
         }
@@ -29,20 +44,7 @@ public class insrt_1st {
                 System.out.print(c1.get(i) + " ");
             }
 
-
-        System.out.println();
-
-          System.out.println(c1);
-
-//        Collections.replaceAll(c1,"Red","Blue");
-
-          System.out.println(c1);
-
-
-    }
-}
-
-
+ */
 
 /*
         join two more list

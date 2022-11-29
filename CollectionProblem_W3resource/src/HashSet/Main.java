@@ -11,17 +11,10 @@ public class Main {
         set.add("Cricket");
         set.add("Soccer");
         set.add("Kabaddi");
-        set.add("Hocky");
         set.add("Swimming");
+        set.add("Swimming");
+        System.out.println(set);
 
-        HashSet<String> set1 = new HashSet<String>();
-                set1.add("Football");
-                set1.add("Race");
-                set1.add("Badminton");
-                set1.add("Swimming");
-                set1.add("Hocky");
-                set1.add("Wrestling");
-        HashSet<String> a = new HashSet<>();
 
 
 

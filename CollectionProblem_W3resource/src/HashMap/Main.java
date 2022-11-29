@@ -13,9 +13,6 @@ public class Main {
         hashMap.put(5,"Halland");
 
 
-        Set set =  hashMap.keySet(); // this view is for only keys of the map
-        System.out.println(hashMap.values());
-
 
 
 

@@ -1,4 +1,4 @@
-package HashMap;
+package HashSet;
 
 import javax.swing.*;
 import java.util.HashSet;

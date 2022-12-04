@@ -36,7 +36,7 @@ public class longest_sum {
         }
 
         int max_l = 0;
-        int max_sp=0;
+        int max_sp= 0;
 
         for (int val : arr)
         {

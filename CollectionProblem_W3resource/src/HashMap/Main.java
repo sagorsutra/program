@@ -12,7 +12,7 @@ public class Main {
         hashMap.put(4,"Nolan");
         hashMap.put(5,"Halland");
 
-
+        System.out.println(hashMap.get(1));
 
 
 

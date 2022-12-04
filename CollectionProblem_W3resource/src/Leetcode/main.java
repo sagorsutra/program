@@ -5,18 +5,16 @@ import java.util.HashSet;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
 
-        HashSet<Integer> hashSet = new HashSet<>();
-        for (Integer n: nums)
-        {
-            hashSet.add(n);
-        }
-
-        if (hashSet.size()!= nums.length)
-        {
-            return  true;
-        }
-        return false;
-
+            HashSet<Integer> hashSet = new HashSet<>();
+            for (Integer n: nums)
+            {
+                hashSet.add(n);
+            }
+            if (hashSet.size()!= nums.length)
+            {
+                return  true;
+            }
+            return false;
     }
 }
 

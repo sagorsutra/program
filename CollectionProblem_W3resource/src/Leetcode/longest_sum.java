@@ -54,10 +54,9 @@ public class longest_sum {
                 }
             }
         }
-
+        System.out.println(max_l);
         for (int i=0; i<max_l; i++)
         {
-            System.out.println();
             System.out.print(max_sp + i + " ");
         }
 

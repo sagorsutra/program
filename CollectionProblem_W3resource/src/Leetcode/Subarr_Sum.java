@@ -1,14 +1,56 @@
 package Leetcode;
 
+import com.sun.source.doctree.SeeTree;
+
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Subarr_Sum {
 
-    public static void main(String[] args) {
+    public static Boolean sumsub() {
         int[] num = {2, 6, 0, 9, 7, 3, 1, 4, 1, 10};
         int target = 15;
 
-        int low = 0;
+        Set<Integer> s = new HashSet<>();
+
+        int sum = 0;
+
+        s.add(0);
+
+        for (Integer a : num)
+        {
+
+            sum = sum + a;
+
+            if (s.contains(sum - target))
+            {
+                return true;
+            }
+            s.add(sum);
+
+        }
+
+        return false;
+
+
+
+    }
+
+
+    public static void main(String[] args) {
+        if (sumsub())
+        {
+            System.out.println("SumSub exist");
+        }
+        else
+            System.out.println("Doesn't Exist");
+    }
+}
+
+/*  without Hashmap
+
+          int low = 0;
         int high = 0;
         int sum = 0;
 
@@ -26,14 +68,12 @@ public class Subarr_Sum {
                  System.out.printf("[%d - %d]", i, high-1);
                  return;
              }
-
              sum = sum - num[i];
-
         }
 
+ */
 
-    }
-}
+
 
 
 /* My code of try

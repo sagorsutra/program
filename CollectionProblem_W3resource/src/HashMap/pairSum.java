@@ -14,9 +14,10 @@ public class pairSum {
         {
             if (hashMap.containsKey(target - arr[i]))
             {
-                System.out.printf("Pair found (%d, %d)",
-                        arr[hashMap.get(target - arr[i])], arr[i]);
+                System.out.printf("Pair sum (%d, %d)", arr[hashMap.get(target - arr[i])], arr[i]);
+
             }
+
 //            else
 //                System.out.println("Number don't found");
 

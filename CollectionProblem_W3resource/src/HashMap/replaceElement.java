@@ -1,9 +1,6 @@
 package HashMap;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class replaceElement {
 
@@ -17,12 +14,26 @@ public class replaceElement {
             map.put(arr[i],i );
         }
 
-        int rank =1;
 
-        for (var val : map.values())
-        {
+
+
+        int rank = 1;
+
+        System.out.println(map);
+
+        System.out.println(map.values());
+
+            // iterate through the map and replace each element with its rank
+        for (var val: map.values()) {
             arr[val] = rank++;
         }
+
+        System.out.println(Arrays.toString(arr));
+
+//        for (Map.Entry s : map.entrySet())
+//        {
+//            System.out.println(s);
+//        }
 
 
 

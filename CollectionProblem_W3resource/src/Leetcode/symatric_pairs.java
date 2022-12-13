@@ -6,6 +6,7 @@ class Pair{
     public int x;
     public int y;
 
+    int b;
     Pair(int x, int y)
     {
         this.x = x;

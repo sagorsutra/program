@@ -12,7 +12,7 @@ public class subArrayHavingDisntELemnt {
         for (int i=0; i<arr.length; i++) {
             Set<Integer> set = new HashSet<>();
 
-
+int a ;
 
             for (int j = i; j < arr.length; j++) {
                 if (set.contains(arr[j])) {

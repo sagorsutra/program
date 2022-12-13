@@ -15,11 +15,11 @@ class Pair{
 }
 
 public class symatric_pairs {
-
-    public static void Sympair(Pair[] pairs) //Ei constructor a Pair class run korte hobe array hisebe coz we need to input these
+    public static void Sympair(Pair[] pairs) //Here through the parameter class element will be pass.And whole class converted into
+                                            // Array
     {
         Set<String> set = new HashSet<>();
-        for (Pair curr_pair : pairs)
+        for (Pair curr_pair : pairs)  // Until the Array will contain element in class element
         {
             String p = "{" +curr_pair.x + "," + curr_pair.y + "}";
             set.add(p);

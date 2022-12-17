@@ -11,7 +11,7 @@ public class Sum_of_triplet {
         for (int i = 0; i < arr.length; i++) {
             map.put(arr[i], i);
         }
-        int count=0;
+        int b=0;
 
         for (int i = 0; i < arr.length-1; i++) {
             for (int j = i + 1; j < arr.length; j++) {

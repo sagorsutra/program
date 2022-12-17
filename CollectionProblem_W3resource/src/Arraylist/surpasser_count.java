@@ -9,6 +9,8 @@ public class surpasser_count {
 
         List<Integer> list = new ArrayList<>();
 
+        int size;
+
         for (int i = 0; i < arr.length; i++){
             int count =0;
             for (int j=i+1; j< arr.length; j++)

@@ -24,6 +24,7 @@ public class subArrSumwithZero {
             }
 
             System.out.println(count);
+            System.out.println(set);
 
         }
 

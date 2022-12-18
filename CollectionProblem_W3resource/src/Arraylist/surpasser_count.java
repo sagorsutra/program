@@ -6,6 +6,7 @@ import java.util.List;
 public class surpasser_count {
     public static void main(String[] args) {
         int[] arr = {4, 6, 3, 9, 7, 10};
+        int c;
 
         List<Integer> list = new ArrayList<>();
 

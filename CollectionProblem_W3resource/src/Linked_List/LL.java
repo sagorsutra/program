@@ -50,14 +50,49 @@ public class LL {
 
     }
 
+    public void delete_first()
+    {
+        if (head == null)
+        {
+            System.out.println("List is empty, Nothing's here to delete");
+        }
+        else {
+            Node currNode = head;
+            head = currNode.next;
+        }
+    }
+
+    public void delete_last()
+    {
+        if (head == null)
+        {
+            System.out.println("List is empty, Nothing's here to delete");
+        }
+        else if (head.next==null) {
+            head=null;
+        }
+
+        else
+        {
+            Node currNode = head;
+
+            while (currNode.next.next!=null)
+            {
+                currNode = currNode.next ;
+            }
+            currNode.next= null;
+        }
+    }
+
+
     public void printList()
     {
         if (head==null)
         {
             System.out.println("Empty list");
         }
-        else{
-
+        else
+        {
             Node currNode = head;
             while (currNode!= null)
             {
@@ -75,7 +110,8 @@ public class LL {
         list.insert_Last(90);
         list.First_insert(10);
         list.First_insert(5);
-        list.insert_Last(100);
+        list.delete_first();
+        list.delete_last();
         list.printList();
 
 

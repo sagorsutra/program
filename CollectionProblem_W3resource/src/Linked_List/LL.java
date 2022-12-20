@@ -84,6 +84,21 @@ public class LL {
         }
     }
 
+    public void reverse()
+    {
+        Node currNode = head;
+        Node prevNode = null;
+
+        while (currNode!=null)
+        {
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head = prevNode;
+    }
+
 
     public void printList()
     {
@@ -112,6 +127,9 @@ public class LL {
         list.First_insert(5);
         list.delete_first();
         list.delete_last();
+        list.printList();
+        System.out.println();
+        list.reverse();
         list.printList();
 
 

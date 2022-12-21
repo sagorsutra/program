@@ -51,13 +51,41 @@ public class Secnd_node_frm_end {
 
     public void Second_last_Node()
     {
-        System.out.println();
-        Node currNode = head;
-        while (currNode.next.next!=null)
+        Node temp = head;
+        Node temp1 =head;
+        int count =0;
+        int n =2;
+
+        while (temp!= null)
         {
-            currNode = currNode.next;
+            count++;
+            temp = temp.next;
+
         }
-        System.out.println(currNode.data);
+
+        if (n>count)
+        {
+            System.out.println(-1);
+        }
+        else
+        {
+            count = count-n;
+            for (int i=0; i<count; i++)
+            {
+                temp1= temp1.next;
+            }
+            System.out.println();
+            System.out.println(temp1.data);
+        }
+
+
+//        System.out.println();
+//        Node currNode = head;
+//        while (currNode.next.next!=null)
+//        {
+//            currNode = currNode.next;
+//        }
+//        System.out.println(currNode.data);
     }
 
 

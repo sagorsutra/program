@@ -51,44 +51,45 @@ class MyStack
     void push(int a)
     {
        StackNode pushNode = new StackNode(a);
-       StackNode curr = top;
 
        if (top==null)
        {
            top = pushNode;
        }
-       else if (top.next == null) {
+       else  {
            top.next = pushNode;
+           top = pushNode;
        }
-       else {
-           while(curr.next!=null)
+
+       /*
+       while(curr.next!=null)
            {
                curr = curr.next;
            }
            curr.next = pushNode;
            pushNode.next= null;
-       }
-
+        */
     }
 
     //Function to remove an item from top of the stack.
     int pop()
     {
-         StackNode curr = top;
-         StackNode next = curr.next;
-
          if (top== null)
          {
              return  -1;
          }
          else {
-             while (curr.next.next!=null)
+               int  n = top.data;
+               top = top.next;
+               return n;
+         }
+         /*
+         while (curr.next.next!=null)
              {
                  curr = curr.next;
              }
              curr.next = null;
-         }
-        return top.data;
+          */
     }
 
     void Print() {

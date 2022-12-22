@@ -2,8 +2,7 @@ package Linked_List;
 //{ Driver Code Starts
 import java.util.*;
 import java.io.*;
-
-class Node{
+ class Node{
     int data;
     Node next;
 
@@ -33,7 +32,7 @@ class GFG{
                 int value = sc.nextInt();
                 int indicator = sc.nextInt();
 
-                Solution ob = new Solution();
+                Sol ob = new Sol();
                 if(indicator == 0)
                     head = ob.insertAtBeginning(head, value);
                 else
@@ -44,7 +43,7 @@ class GFG{
         }
     }
 }
-class Solution
+class Sol
 {
     //Function to insert a node at the beginning of the linked list.
     Node insertAtBeginning(Node head, int x)

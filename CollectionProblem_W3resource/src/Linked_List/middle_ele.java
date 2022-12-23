@@ -1,8 +1,8 @@
 package Linked_List;
 
-//{ Driver Code Starts
+
 import java.util.*;
-        import java.io.*;
+import java.io.*;
 
 
 class middle_ele{
@@ -35,17 +35,6 @@ class middle_ele{
         }
     }
 }
-
-// } Driver Code Ends
-
-
-/* Node of a linked list
- class Node {
-   int data;
-    Node next;
-    Node(int d)  { data = d;  next = null; }
-}
-*/
 
 class Solutions
 {

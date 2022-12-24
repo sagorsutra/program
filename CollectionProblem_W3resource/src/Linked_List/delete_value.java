@@ -77,23 +77,16 @@ class Delete_Node
     }
 }
 
-
-
 class S
 {
+
     void deleteNode(Node del)
     {
-         Node curr = del ;
-         Node prev = null;
 
-         if (del == null )
-         {
-             System.out.println("List is empty");
-         }
-         else if (del.next == null)
-         {
-             del = prev;
-         }
+        //This two line is important and unique;
+
+         del.data = del.next.data;   // First Exchange the Data first .
+         del.next = del.next.next;   // Then Update the next pointer of the node.
     }
 }
 

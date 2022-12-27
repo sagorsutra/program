@@ -1,6 +1,8 @@
 package Linked_List;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Sorted_linked_list {
 
@@ -41,10 +43,68 @@ public class Sorted_linked_list {
 
     public void Sorted_List()
     {
-        Node currNode = head;
 
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(currNode.data);
+        Node curr = head;
+        int count0=0;
+        int count1=0;
+        int count2=0;
+
+        while(curr!=null)
+        {
+            if (curr.data==0)
+            {
+                count0++;
+            }
+            else if (curr.data==1) {
+                count1++;
+            }
+            else
+            {
+                count2++;
+            }
+        }
+
+        while(count0>0)
+        {
+            curr.data=0;
+            curr=curr.next ;
+            count0--;
+        }
+        while(count1>0)
+        {
+            curr.data=1;
+            curr=curr.next ;
+            count1--;
+        }
+        while(count2>0)
+        {
+            curr.data=2;
+            curr=curr.next ;
+            count2--;
+        }
+
+        while (curr.next!=null)
+        {
+            System.out.println(curr.data);
+            curr = curr.next;
+        }
+
+//        Node currNode = head;
+//
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        while (currNode!=null)
+//        {
+//            arr.add(currNode.data);
+//            currNode = currNode.next;
+//        }
+//
+//        Collections.sort(arr);
+//
+//        for (int a : arr)
+//        {
+//            System.out.print(a + " ");
+//        }
+
     }
 
 
@@ -61,11 +121,18 @@ public class Sorted_linked_list {
 
     public static void main(String[] args) {
         Sorted_linked_list ll = new Sorted_linked_list();
-        ll.insertlast(30);
-        ll.insertlast(99);
-        ll.insertlast(25);
-        ll.Sorted_List();
+        ll.insertlast(1);
+        ll.insertlast(2);
+        ll.insertlast(2);
+        ll.insertlast(1);
+        ll.insertlast(2);
+        ll.insertlast(0);
+        ll.insertlast(2);
+        ll.insertlast(2);
+
         ll.printList();
+        System.out.println();
+        ll.Sorted_List();
 
 
 

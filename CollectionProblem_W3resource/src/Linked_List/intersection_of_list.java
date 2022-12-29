@@ -85,7 +85,7 @@ class Solt
             }
 
         }
-        return dummy.next;
+        return dummy.next;     // Because first Node is Empty that's why iterating from the next one
 
         /*
           // return the head of intersection list

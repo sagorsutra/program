@@ -1,6 +1,30 @@
 public class Recursion_basic {
 
-    public static void  Printsum(int i,int n, int sum)
+    public static int factorial(int n)
+    {
+        if (n==0 || n==1 )
+        {
+            return 1;
+        }
+
+        int fact = factorial(n-1);
+        int facto = n * fact;
+        return facto;
+    }
+
+    public static void main(String[] args) {
+
+        int fact = factorial(5);
+        System.out.println(fact);
+
+    }
+
+}
+
+/*
+      ---> Print SUM
+
+ public static void  Printsum(int i,int n, int sum)
     {
 
         if (i==n)
@@ -19,9 +43,9 @@ public class Recursion_basic {
 
     }
 
-}
 
-/*
+
+
 
       ---> Number printing
 
